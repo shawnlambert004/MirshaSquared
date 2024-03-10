@@ -1,6 +1,6 @@
 export const viewport = {
   width: 'device-width',
-  initialScale: 1.0,
+  initialScale: 0.5,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

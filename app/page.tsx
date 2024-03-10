@@ -19,10 +19,9 @@ export const metadata: Metadata = {
     description: 'IDRC',
     images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmNcVSBegwkWcXfjeSuyrnLtpqfrAG1BERxTAJKbN8V667/0.png.png`],
   },
-  other: {
-    ...frameMetadata,
-  },
 };
+
+
 
 export default function Page() {
   return (
