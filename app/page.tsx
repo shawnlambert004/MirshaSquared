@@ -4,24 +4,25 @@ import type { Metadata } from 'next';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: "Next"
+      label: "Begin"
     }
   ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmNcVSBegwkWcXfjeSuyrnLtpqfrAG1BERxTAJKbN8V667/0.png.png`,
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmNcVSBegwkWcXfjeSuyrnLtpqfrAG1BERxTAJKbN8V667/0.png`,
   post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 
 export const metadata: Metadata = {
-  title: 'Aleph Zero',
-  description: 'idrc',
+  title: 'Mirsha Promotions',
+  description: 'idc',
   openGraph: {
-    title: 'Aleph Zero',
-    description: 'IDRC',
-    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmNcVSBegwkWcXfjeSuyrnLtpqfrAG1BERxTAJKbN8V667/0.png.png`],
+    title: 'Mirsha Promotions',
+    description: 'idgas',
+    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmNcVSBegwkWcXfjeSuyrnLtpqfrAG1BERxTAJKbN8V667/0.png`],
+  },
+  other: {
+    ...frameMetadata,
   },
 };
-
-
 
 export default function Page() {
   return (
